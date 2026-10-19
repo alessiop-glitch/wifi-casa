@@ -155,7 +155,6 @@
                 <div class="flex justify-between items-center">
                     <span class="text-slate-400 flex items-center gap-1.5"><i data-lucide="key-round" class="w-3.5 h-3.5 text-slate-400"></i> Password:</span>
                     <div class="flex items-center gap-2">
-                        <span id="wifi-pass" class="font-mono font-bold text-indigo-400 tracking-wider">casapuzzoli123!</span>
                         <button onclick="copyPassword()" class="p-1 hover:bg-slate-800 rounded text-slate-400 hover:text-white transition-colors" title="Copia password">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
@@ -283,14 +282,6 @@
             if (countdownText) {
                 countdownText.innerHTML = '<span class="text-amber-400 font-semibold">Chiusura automatica annullata</span>';
             }
-        }
-
-        // 4. Copia della password
-        function copyPassword() {
-            const passText = "casapuzzoli123!";
-            navigator.clipboard.writeText(passText).then(() => {
-                alert("Password 'casapuzzoli123!' copiata negli appunti!");
-            });
         }
 
         // 5. Chiusura Pagina
